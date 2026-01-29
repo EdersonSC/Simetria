@@ -9,7 +9,6 @@ window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     
     if (navbar) {
-        // Se o scroll passar de 50px, adiciona a classe 'scrolled'
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
@@ -20,11 +19,28 @@ window.addEventListener('scroll', function() {
 
 // Menu mobile toggle
 const menuToggle = document.getElementById('menuToggle');
-if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-        const menuDesktop = document.querySelector('.menu-desktop');
-        if (menuDesktop) {
-            menuDesktop.classList.toggle('open');
+const menuMobile = document.getElementById('menuMobile');
+
+if (menuToggle && menuMobile) {
+    menuToggle.addEventListener('click', function() {
+        menuMobile.classList.toggle('open');
+        menuToggle.classList.toggle('active');
+        
+        // Muda o ícone do hamburguer para X
+        if (menuMobile.classList.contains('open')) {
+            menuToggle.textContent = '✕';
+        } else {
+            menuToggle.textContent = '☰';
         }
+    });
+    
+    // Fecha o menu ao clicar em um link
+    const menuLinks = menuMobile.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            menuMobile.classList.remove('open');
+            menuToggle.classList.remove('active');
+            menuToggle.textContent = '☰';
+        });
     });
 }

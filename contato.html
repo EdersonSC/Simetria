@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato | Ágape Cabelo & Estética</title>
+    <title>Contato | Studio Simetria - Cabelo & Estética</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Fontes Google -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -29,6 +29,16 @@
             <!-- Botão Menu Mobile -->
             <button class="menu-toggle" id="menuToggle">☰</button>
         </div>
+
+        <!-- Menu Mobile -->
+        <nav class="menu-mobile" id="menuMobile">
+            <a href="index.html">PÁGINA INICIAL</a>
+            <a href="quem-somos.html">QUEM SOMOS</a>
+            <a href="servicos.html">SERVIÇOS</a>
+            <a href="spa-noiva.html">DIA DA NOIVA</a>
+            <a href="galerias.html">GALERIAS</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
     </header>
 
     <!-- HERO PRINCIPAL - TELA CHEIA -->
@@ -36,7 +46,6 @@
         <div class="overlay"></div>
         
         <div class="hero-content">
-            
             <p class="hero-subtitle">Entre em contato conosco</p>
             <h1 class="title">CONTATO</h1>
         </div>
@@ -46,35 +55,151 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DE CONTATO -->
-    <section class="section-contact">
-        <div class="container">
-            <h2 class="section-title">Fale Conosco</h2>
-            <p class="section-text">Estamos aqui para ajudar. Entre em contato por telefone, e-mail ou visite nosso espaço.</p>
+    <!-- LOCALIZAÇÃO (baseado no site Manara) -->
+    <section class="section-localizacao" id="localizacao" aria-label="Localização">
+      <div class="container-full">
+        <span class="section-label-center">LOCALIZAÇÃO</span>
+        <h2 class="section-title-center">Onde Estamos</h2>
+        <p class="section-text" style="text-align:center; max-width:700px; margin:0 auto 40px;">
+          R. Joaquim José da Silva Xavier, 170 - Vila Paraiso, Mogi Guaçu - SP, 13843-016
+        </p>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>📱 Telefone</h3>
-                    <p>(99) 99999-9999</p>
-                </div>
+        <div class="map-grid">
+          <!-- Mapa -->
+          <div class="map-box" role="region" aria-label="Mapa">
+            <iframe
+              title="Mapa - Studio Simetria"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=R.%20Joaquim%20Jos%C3%A9%20da%20Silva%20Xavier%2C%20170%20-%20Vila%20Paraiso%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013843-016&output=embed">
+            </iframe>
+          </div>
 
+          <!-- Painel lateral -->
+          <div class="map-panel">
+            <h3>Como chegar</h3>
+            <p>Abra o trajeto no Google Maps e venha viver uma experiência de beleza e bem-estar no Studio Simetria.</p>
 
-                <div class="contact-item">
-                    <h3>📍 Endereço</h3>
-                    <p>Rua Exemplo, 123 - Cidade/UF</p>
-                </div>
+            <div class="map-actions">
+              <a class="btn btn-primary"
+                 href="https://www.google.com/maps/dir/?api=1&destination=R.%20Joaquim%20Jos%C3%A9%20da%20Silva%20Xavier%2C%20170%20-%20Vila%20Paraiso%2C%20Mogi%20Gua%C3%A7u%20-%20SP%2C%2013843-016"
+                 target="_blank" rel="noopener noreferrer">
+                Como chegar
+              </a>
+              <a class="btn btn-outline-dark" href="#contato">Falar com o Studio</a>
             </div>
 
-            <form class="contact-form">
-                <h3>Envie uma Mensagem</h3>
-                <input type="text" name="nome" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu E-mail" required>
-                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+            <dl class="map-info">
+              <div>
+                <dt>Telefone/WhatsApp</dt>
+                <dd><a href="tel:+5519999999999">(19) 99999-9999</a></dd>
+              </div>
+              <div>
+                <dt>Horário</dt>
+                <dd>Seg–Sex 09:00–19:00<br>Sábado 09:00–17:00</dd>
+              </div>
+            </dl>
+          </div>
         </div>
+      </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- CONTATO (baseado no site Manara) -->
+    <section class="section-contact-simetria" id="contato" aria-label="Contato">
+      <div class="container-full">
+        <span class="section-label-center">FALE CONOSCO</span>
+        <h2 class="section-title-center">Contato</h2>
+        <p class="section-text" style="text-align:center; max-width:600px; margin:0 auto 40px;">
+          Respondemos o mais rápido possível pelo WhatsApp ou telefone.
+        </p>
+
+        <div class="contact-grid-simetria">
+          <!-- Ações rápidas -->
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-primary-large" href="https://wa.me/5519999999999" target="_blank" rel="noopener noreferrer">
+              Falar no WhatsApp
+            </a>
+            <a class="btn btn-outline-dark btn-primary-large" href="tel:+5519999999999">
+              Ligar agora
+            </a>
+
+            <div class="contact-trust">
+              <p><strong>Seu contato vai direto para o Studio Simetria.</strong></p>
+              <p>Sem burocracia. Tire dúvidas, agende horários e peça informações.</p>
+            </div>
+          </div>
+
+          <!-- Formulário simples -->
+          <form class="contact-form-simetria">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone/WhatsApp</label>
+              <input id="telefone" name="telefone" type="tel" placeholder="(19) 99999-9999" required>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte como podemos ajudar" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            <p class="form-footnote-simetria">
+              Em breve entraremos em contato usando os dados informados.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-col">
+                <h4>Simetria</h4>
+                <p>Cabelo & Estética</p>
+                <p class="footer-text">
+                    Transformando beleza em autoestima.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>NAVEGAÇÃO</h4>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CONTATO</h4>
+                <ul>
+                    <li>📱 <a href="tel:+5519999999999">(19) 99999-9999</a></li>
+                    <li>📍 R. Joaquim José da Silva Xavier, 170</li>
+                    <li>Vila Paraiso, Mogi Guaçu - SP</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>REDES SOCIAIS</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Studio Simetria. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
