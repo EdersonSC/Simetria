@@ -160,7 +160,7 @@ a {
     background: none;
     border: none;
     font-size: 28px;
-    color: #403a3a;
+    color: #f40909;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -811,7 +811,7 @@ a {
 
 /* Animação do botão hamburguer */
 .menu-toggle.active {
-    color: var(--primary);
+    color: var(--text-dark);
 }
 
 /* Responsivo */
