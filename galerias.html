@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerias | Ágape Cabelo & Estética</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MENU FIXO -->
+    <header class="navbar">
+        <div class="container-nav">
+            <div class="logo-nav">
+                <img src="img/Logo1.png" alt="Studio Simetria - Cabelo & Estética" class="logo-img">
+            </div>
+            
+            <nav class="menu-desktop">
+                <a href="index.html">PÁGINA INICIAL</a>
+                <a href="quem-somos.html">QUEM SOMOS</a>
+                <a href="servicos.html">SERVIÇOS</a>
+                <a href="spa-noiva.html">DIA DA NOIVA</a>
+                <a href="galerias.html" class="active">GALERIAS</a>
+                <a href="contato.html">CONTATO</a>
+            </nav>
+
+            <!-- Botão Menu Mobile -->
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <!-- HERO PRINCIPAL - TELA CHEIA -->
+    <section class="hero-home" style="background-image: url('img/galerias-bg.jpg');">
+        <div class="overlay"></div>
+        
+        <div class="hero-content">
+            
+            <p class="hero-subtitle">Explore nossos trabalhos</p>
+            <h1 class="title">GALERIAS</h1>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE GALERIA -->
+    <section class="section-gallery">
+        <div class="container-full">
+            <span class="section-label-center">NOSSOS TRABALHOS</span>
+            <h2 class="section-title-center">Galeria Completa</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('img/galeria-1.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('img/galeria-2.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('img/galeria-3.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('img/galeria-4.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('img/galeria-5.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('img/galeria-6.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('img/galeria-7.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('img/galeria-8.jpg');"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

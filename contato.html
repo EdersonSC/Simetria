@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Ágape Cabelo & Estética</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MENU FIXO -->
+    <header class="navbar">
+        <div class="container-nav">
+            <div class="logo-nav">
+                <img src="img/Logo1.png" alt="Studio Simetria - Cabelo & Estética" class="logo-img">
+            </div>
+            
+            <nav class="menu-desktop">
+                <a href="index.html">PÁGINA INICIAL</a>
+                <a href="quem-somos.html">QUEM SOMOS</a>
+                <a href="servicos.html">SERVIÇOS</a>
+                <a href="spa-noiva.html">DIA DA NOIVA</a>
+                <a href="galerias.html">GALERIAS</a>
+                <a href="contato.html" class="active">CONTATO</a>
+            </nav>
+
+            <!-- Botão Menu Mobile -->
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <!-- HERO PRINCIPAL - TELA CHEIA -->
+    <section class="hero-home" style="background-image: url('img/Contato.jpg');">
+        <div class="overlay"></div>
+        
+        <div class="hero-content">
+            
+            <p class="hero-subtitle">Entre em contato conosco</p>
+            <h1 class="title">CONTATO</h1>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section class="section-contact">
+        <div class="container">
+            <h2 class="section-title">Fale Conosco</h2>
+            <p class="section-text">Estamos aqui para ajudar. Entre em contato por telefone, e-mail ou visite nosso espaço.</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📱 Telefone</h3>
+                    <p>(99) 99999-9999</p>
+                </div>
+
+
+                <div class="contact-item">
+                    <h3>📍 Endereço</h3>
+                    <p>Rua Exemplo, 123 - Cidade/UF</p>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <h3>Envie uma Mensagem</h3>
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
