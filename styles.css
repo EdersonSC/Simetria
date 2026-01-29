@@ -11,7 +11,7 @@
     --primary-dark: #5a4a2f;
     --text: #ece9e9;
     --text-light: #666;
-    --text-dark: #666;
+    --text-dasrk: #666;
     --bg: #f9f7f4;
     --bg-alt: #ede9e3;
     --white: #ffffff;
@@ -779,7 +779,7 @@ a {
 .menu-mobile {
     display: none;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(83, 80, 80, 0.98);
     position: absolute;
     top: 100%;
     left: 0;
