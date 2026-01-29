@@ -11,6 +11,7 @@
     --primary-dark: #5a4a2f;
     --text: #ece9e9;
     --text-light: #666;
+    --text-dark: #333030;
     --bg: #f9f7f4;
     --bg-alt: #ede9e3;
     --white: #ffffff;
@@ -165,7 +166,7 @@ a {
 }
 
 .navbar.scrolled .menu-toggle {
-    color: var(--text);
+    color: var(--text-dark);
 }
 .container-nav {
     max-width: 1400px;
@@ -238,7 +239,7 @@ a {
     background: none;
     border: none;
     font-size: 28px;
-    color: var(--text);
+    color: var(--text-dark);
     cursor: pointer;
 }
 
