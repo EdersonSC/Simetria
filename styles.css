@@ -11,7 +11,7 @@
     --primary-dark: #5a4a2f;
     --text: #ece9e9;
     --text-light: #666;
-    --text-dark: #333030;
+    --text-dark: #666;
     --bg: #f9f7f4;
     --bg-alt: #ede9e3;
     --white: #ffffff;
@@ -160,13 +160,13 @@ a {
     background: none;
     border: none;
     font-size: 28px;
-    color: #f40909;
+    color: #403a3a;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .navbar.scrolled .menu-toggle {
-    color: var(--text-dark);
+    color: var(--text);
 }
 .container-nav {
     max-width: 1400px;
@@ -239,7 +239,7 @@ a {
     background: none;
     border: none;
     font-size: 28px;
-    color: var(--text-dark);
+    color: var(--text);
     cursor: pointer;
 }
 
@@ -779,7 +779,7 @@ a {
 .menu-mobile {
     display: none;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(70, 69, 69, 0.98);
     position: absolute;
     top: 100%;
     left: 0;
@@ -811,7 +811,7 @@ a {
 
 /* Animação do botão hamburguer */
 .menu-toggle.active {
-    color: var(--text-dark);
+    color: var(--primary);
 }
 
 /* Responsivo */
